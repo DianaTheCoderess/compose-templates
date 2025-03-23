@@ -7,13 +7,13 @@
 
 # List of users
 users:
-  yourUsername:  # define here your username
+  authelia:
     disabled: false
-    displayname: "My Authelia User"
+    displayname: 'Authelia User'
     # Password is authelia
-    password: "$argon2id$v=19$m=65536,t=3,p=4$mTOaOa3MOexX7JQ02BdXzw$OzAxTnSPEnahQgIi+y4QPP5/xYIQ8uEWDYW+vlupeTM"  # generate a secure hash with: $ docker run authelia/authelia:latest authelia crypto hash generate argon2 --password 'password'
-    email: authelia@example.com
+    password: '$6$rounds=50000$BpLnfgDsc2WD8F2q$Zis.ixdg9s/UOJYrs56b5QEZFiZECu0qZVNsIYxBaNJ7ucIL.nlxVCT5tqh8KHG8X4tlwCFm5r6NTOZZ5qRFN/'  # yamllint disable-line rule:line-length
+    email: 'authelia@authelia.com'
     groups:
-      - admins
-      - dev
+      - 'admins'
+      - 'dev'
 ...
