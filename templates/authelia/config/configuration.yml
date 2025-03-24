@@ -12,10 +12,6 @@ log:
 totp:
   issuer: 'authelia.com'
 
-identity_validation:
-  reset_password:
-    jwt_secret: 'a_very_important_secret'
-
 # duo_api:
 #  hostname: api-123456789.example.com
 #  integration_key: ABCDEF
@@ -50,9 +46,7 @@ session:
 
   redis:
     host: 'redis'
-    port: 6379
-    # This secret can also be set using the env variables AUTHELIA_SESSION_REDIS_PASSWORD_FILE
-    # password: authelia
+    port: 6379e
 
 regulation:
   max_retries: 3
